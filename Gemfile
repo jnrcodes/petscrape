@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 gem 'capybara'
 gem 'poltergeist'
+gem 'phantomjs'
 gem 'selenium-webdriver'
+gem 'pry-debugger'

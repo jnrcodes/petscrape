@@ -3,20 +3,31 @@
   <component name="CompassSettings">
     <option name="compassSupportEnabled" value="true" />
   </component>
+  <component name="ModuleRunConfigurationManager">
+    <configuration default="false" name="battlepets" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="petscrape" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/battlepets.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+  </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.6.0, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="capybara (v2.4.4, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.5.5, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.6, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.11.0, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.1.6, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.43.0, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.1, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, ruby-1.9.3-p545) [gem]" level="application" />
   </component>
 </module>
 
