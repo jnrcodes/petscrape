@@ -3,24 +3,24 @@
 require 'bundler/setup'
 require 'capybara'
 require 'capybara/poltergeist'
+require 'pry-debugger'
 
-Capybara.register_driver :firefox do |app|
+Capybara.register_driver :poltergeist do |app|
   options = {
     inspector: true,
-    js_errors: false
+    js_errors: true,
+    extensions: [ 'vendor/poltergeist/bind.js' ]
    }
   Capybara::Poltergeist::Driver.new(app, options)
 end
-Capybara.default_driver = :firefox
+Capybara.default_driver = :poltergeist
 
 class BattlePets
   class << self
     include Capybara::DSL
     def print_names
       visit "https://theunderminejournal.com/#eu/silvermoon/category/battlepets"
-      #page.debug
-      sleep 5
-      find(:xpath, '//tr', match: :first)
+      # binding.pry  # uncomment or move around to enter debugger
       all(:xpath, '//tr').each do |row|
          if (td = row.find(:xpath, './/td[@class="name"]') rescue nil) then
            $stderr.puts td.text
